@@ -1,17 +1,14 @@
-/* link {
-    color: red;
-    font-size: 10px;
+#item {
+    color: blue;
     text-decoration: none;
 }
 
-.service {
+.item{
+    color: purple;
+    text-decoration: none;
+}
+
+a {
     color: green;
 }
 
-#blog {
-    color: pink;
-} */
-
-div {
-    color: green;
-}
