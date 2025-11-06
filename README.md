@@ -1,7 +1,5 @@
 # aula-impacta
 
-Meu Primeiro comit 
-
-git add . 
-git commit -m "comentario"
-git push
+## Aula de CSS
+ -Especificidade
+ -link de referencia {https://www.w3schools.com/css/css_specificity.asp}

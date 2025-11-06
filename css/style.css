@@ -1,14 +1,54 @@
-#item {
-    color: blue;
-    text-decoration: none;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.logo {
+    
+}
+
+.menu {
+    
+}
+
+.btn-green {
+    background-color: #36B864;
+    border: transparent;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px 20px ;
+    cursor: pointer;
+}
+
+.btn-green:hover {
+    background-color: #2aa053;
+    
+}
+
+.menu-itens {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
 }
 
 .item{
-    color: purple;
     text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
 }
 
-a {
-    color: green;
-}
+/* .item:hover {
+    background-color: aqua;
+} */
 
+.menu-itens li{
+    margin: 1px;
+}
