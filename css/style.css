@@ -1,34 +1,60 @@
+html {
+    font-size: var(--font-size);
+}
+
+@font-face {
+    font-family: sauce;
+    src: url(..//fonts/pepper-sauce.ttf);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
 }
 
 .header {
     display: flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items: center;
+    background-color: rgb(26, 209, 255);
 
 }
-
 .logo {
-    
+    /* border: 5px black solid;
+    border-radius: 50%; */
+    /* height: 150px;
+    width: 150px; */
+    height: auto;
+    display: block;
 }
 
 .menu {
-    
+    width: 35%;
 }
 
 .btn-green {
-    background-color: #36B864;
+    background-color: var(--cor-proclean-green-light);
     border: transparent;
     color: #fff;
     border-radius: 3px;
     padding: 10px 20px ;
     cursor: pointer;
+    font-size: 1.6rem;
+    width: 159px;
+    line-height: 13px;
+    text-align: center;
+    min-height: 10px;
+    text-shadow: 1px 1px 1px black;
+    box-shadow: 4px 2px 9px black ;
 }
 
 .btn-green:hover {
-    background-color: #2aa053;
+    background-color: var(--cor-proclean-green-dark);
+    box-shadow: -1px 1px 1px black ;
+
     
 }
 
@@ -38,17 +64,65 @@
     justify-content: center;
 }
 
+
+/* Menu header */
 .item{
     text-decoration: none;
     padding: 10px;
     display: block;
     font-size: 16px;
+    color: #4d4d4d;
+    font-size: 1.6rem;
+    font-family: sause;
+    color: var(--cor-proclean-gray);
+    font-weight: 700;
 }
 
 /* .item:hover {
     background-color: aqua;
+    
 } */
 
 .menu-itens li{
     margin: 1px;
 }
+
+.active{
+    color: var(--cor-proclean-green-light);
+}
+
+.container {
+    max-width: 50%;
+    margin: auto;
+
+}
+
+/* Main */
+
+.main-clean {
+    height: 500px;
+    background-image: url(../img/Hero\ Section.png);
+}
+
+
+
+/* 
+/* .screen {
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    /* z-index: 10; */
+/* } */
+
+/* .modal {
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 50%;
+    */
