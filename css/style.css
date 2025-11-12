@@ -7,6 +7,12 @@ html {
     src: url(..//fonts/pepper-sauce.ttf);
 }
 
+.clean-content {
+    border: 1px solid black;
+    margin: auto;
+    width: 70%;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -96,9 +102,8 @@ html {
 }
 
 .container {
-    max-width: 100%;
+    max-width: 90%;
     margin: auto;
-    height: 55px;
 
 }
 
@@ -108,7 +113,6 @@ html {
     height: auto;
     background-image: url(../img/hero-image.png);
     background-repeat: no-repeat;
-    /* background-color: blueviolet; */
     margin:0 auto;
     background-size: cover;
     width: 80%;
@@ -118,7 +122,7 @@ html {
 
 .content-main {
     width: 50%;
-    font-family: url(../fonts/pepper-sauce.ttf);
+    /* font-family: url(../fonts/pepper-sauce.ttf); */
     color: var(--cor-proclean-green-dark2);
     padding: 65px 0 50px 110px;
 }
@@ -144,6 +148,11 @@ html {
     background-color: #ffffff00;
 }
 
+.btn-green3 {
+    background-color: #ffffff00;
+    color: black;
+}
+
 .btn-green2:hover {
     background-color: #868282;
     text-shadow: -1px -1px -1px #000000
@@ -154,7 +163,7 @@ html {
 
 /* Section */
 
-.section {
+/* .section {
     margin: 480px;
     margin-left: 260px;
     font-size: 1.8em;
@@ -169,6 +178,30 @@ section > .btn-green {
   float: right;
   
 
+} */
+
+/* service */
+
+.header-service {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+
+.header-service > div{
+    width: 40%;
+}
+
+.service-description {
+    
+    overflow-y: auto;
+    /* Para renderizar no crhome e safary
+    -webkit-border-radius: 50px;
+    Renderiza para versões atuais 
+     border-radius: 50px; */
+    
+    /* Para renderizar no firefox
+     -moz-border-radius: 50px; */
 }
 
 
