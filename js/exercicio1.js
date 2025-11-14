@@ -1,6 +1,6 @@
 var nomeProduto = prompt('digite o nome do produto') 
 var quantidadeProduto = prompt ('digite a quantidade')
-var valorProduto = prompt (10)
+var valorProduto = prompt ('digite o valor do produto')
 var nomeCliente = prompt ('digite seu nome')
 
 console.log (nomeCliente)
