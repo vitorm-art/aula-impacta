@@ -61,11 +61,45 @@ var contrato = "";
 //     console.log('Reprovado')
 // }
 
-// var resultado
+// 
 
-// resultado = notaAluno >=7 ? 'Aprovado' : 'Reprovado'
-// console.log(resultado)
+//  var nomeCLiente = prompt ('digite seu nome')
 
- var nomeCLiente = prompt ('digite seu nome')
+/* let é para criar variaveis */
+let contratoAluguel = 'Fechado'
+contratoAluguel = 'Aberto'
+
+/* const para criar constantes */
+const pi = 3.41
+
+let circulo = 50 * pi
 
 
+// console.log(contratoAluguel)
+/* Estrutura de repetição */
+
+ for(let interacao = 0; interacao <dadosPessoais.length; interacao++) {
+
+     if (dadosPessoais[interacao] === 6200) {
+         dadosPessoais[interacao] = 7000
+         
+     }
+     console.log(dadosPessoais[interacao])
+
+
+}     
+
+// let interacao = 0
+
+// while(interacao > 10) {
+//     console.log (interacao)
+//     console.log ('-------')
+
+//     interacao++
+// }
+
+/* Array */
+
+const dadosPessoais = [4000, 5000 , 8000 ,6000, 4000]
+
+console.log(dadosPessoais.length)

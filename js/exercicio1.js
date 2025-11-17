@@ -1,16 +1,39 @@
-var nomeProduto = prompt('digite o nome do produto') 
-var quantidadeProduto = prompt ('digite a quantidade')
-var valorProduto = prompt ('digite o valor do produto')
-var nomeCliente = prompt ('digite seu nome')
+(function (calc) {
+    let interromper = true
+    while(interromper) {
+        const imposto = 0.2
+        const produtos = [
+            ['Sabão', 2.00], // cod 1
+            ['Leite', 5.00], // cod 2
+            ['Açucar',5.50], // cod 3
+        ]
+        const dados = [];
+        const mensagens = [
+            'codigo do produto',
+            'digite a quantidade',
+        ]
 
-console.log (nomeCliente)
-console.log (nomeProduto)
-console.log (valorProduto)
-console.log(valorProduto * quantidadeProduto);
+        for(let i = 0; i < mensagens.length; i++) {
+            let dado = prompt(mensagens[i]) 
+            dados.push(dado)
+        }
 
-var volteSempre = prompt ('Obrigado e volte sempre!')
-console.log('Obrigado e volte sempre!Sabão')
+        const cod = dados[0]
+        const produtoSelecionado = produtos[cod - 1]
 
+        if (!produtoSelecionado) {
+            alert('produto não existe')
+            continue; 
+        }
+        
+        const totalCompra = calc(dados[1], produtoSelecionado[1], imposto)
 
+        console.log(`Produto:  ${produtoSelecionado[0]}`)
+        console.log(`Valor Unitario: ${produtoSelecionado[1]}`)
+        console.log(`Total da compra: ${totalCompra}`)
+        console.log(`Imposto cobrado: 20%`)
 
+        interromper = confirm('Deseja continuar?')
+    }
+})(calculoTotalCompra)
 
